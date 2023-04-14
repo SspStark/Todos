@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <title>Todos</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Todos.css">
+</head>
+
+<body>
+    <div class="todos_bg_container">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="todos_heading">Todos</h1>
+                    <h1 class="task_heading">Create Task</h1>
+                    <input type="text" class="todos_user_input" id="todosuserinput" placeholder="What needs to be done ?" />
+                    <button class="btn btn-primary mt-4 mb-5" onclick="addTodo()">Add</button>
+                    <h1 class="task_heading">My Tasks</h1>
+                    <ul id="todosContainer" class="todos_container m-0 p-0"></ul>
+                    <button class="btn btn-danger mt-3 mb-3" onclick="saveTodo()">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Todos.js"></script>
+</body>
+
+</html>
